@@ -67,6 +67,12 @@ a {
     font-size: 100px;
 }
 
+.grudento{
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+
 .botao {
     padding: 0 15px;
     transition: 0.3s;

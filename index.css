@@ -19,9 +19,6 @@ body {
     background-color: var(--fundo_principal);
 }
 
-header{
-    position: sticky;
-}
 
 .container {
     width: 100vw;
@@ -67,6 +64,12 @@ a {
 
 .container-do-titulo p {
     font-size: 100px;
+}
+
+.grudento{
+    position: fixed;
+    top: 0;
+    width: 100%;
 }
 
 .botao {
