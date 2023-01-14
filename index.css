@@ -67,16 +67,16 @@ a {
     font-size: 100px;
 }
 
-.container-da-imagem  {
-  width: 99vw;
+.container-da-imagem {
+    width: 99vw;
 }
 
-.container-da-imagem img{
+.container-da-imagem img {
     width: 100%;
     height: 95.5vh;
 }
 
-.endereco{
+.endereco {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -87,24 +87,79 @@ a {
     height: 8vh;
 }
 
-.endereco h1{
+.endereco h1 {
     text-transform: uppercase;
 }
 
-.endereco h4{
+.endereco h4 {
     color: var(--cinza);
 }
 
-.servicos{
+.servicos {
     background-color: var(--fundo_secundario);
-    height: 99vh;
+    height: 30vh;
     width: 99.1vw;
 }
 
-.icone-redondo{
-
+.canvas-do-servico {
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
+.canvas-do-servico:nth-last-child(1) h2 {
+    padding-left: 20px;
+}
+
+.canvas-do-servico:nth-last-child(2) h2 {
+    padding-right: 50px;
+}
+
+.row-do-servico {
+    display: grid;
+    grid-template-columns: auto auto auto;
+}
+
+.texto-do-servicos {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    justify-items: center;
+    padding: 0;
+    margin: 0;
+    width: 99vw;
+    height: 8vh;
+}
+
+.texto-do-servicos h1 {
+    text-transform: uppercase;
+}
+
+.texto-do-servicos h4 {
+    color: var(--cinza);
+}
+
+.grid-do-texto {
+    
+    display: grid;
+    justify-content: space-between;
+    position: absolute;
+    left: 60%;
+    z-index: -1;
+    
+    
+}
+
+.caixa-de-texto {
+    font-style: italic;
+    line-height: 32px;
+    font-size: 20px;
+    background-color: silver;
+    margin: 10px;
+    padding: 15px 20px 10px 20px;
+    border-radius: 5px;
+
+}
 
 .grudento {
     position: fixed;

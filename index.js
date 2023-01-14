@@ -27,10 +27,14 @@ window.onload = mudarImagem
 const canvasDoServiços = document.querySelectorAll("#iconeDoServico")
 for (let i = 0; i < canvasDoServiços.length; i++) {
     let ctx = canvasDoServiços[i].getContext("2d")
+    ctx.fillStyle = "#2b2b25"
     ctx.beginPath()
     ctx.arc(75, 80, 65, 0, 2 * Math.PI)
-    ctx.stroke()
+    ctx.closePath()
+    ctx.fill()
 }
+
+
 
 
 
