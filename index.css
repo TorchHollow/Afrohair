@@ -22,8 +22,8 @@ body {
 
 .container {
     width: 100vw;
-    max-width: 1200px;
-    position: relative;
+    height: 100%;
+
 }
 
 .container-do-titulo {
@@ -101,6 +101,10 @@ a {
     width: 99.1vw;
 }
 
+.row-do-servico {
+    padding-left: 150px;
+}
+
 .canvas-do-servico {
     display: flex;
     align-items: center;
@@ -112,7 +116,15 @@ a {
 }
 
 .canvas-do-servico:nth-last-child(2) h2 {
-    padding-right: 50px;
+    padding-right: 100px;
+}
+
+.sevicos-principais {
+
+    padding: 0;
+    margin: 0;
+    width: 99vw;
+    height: 100%;
 }
 
 .row-do-servico {
@@ -125,10 +137,6 @@ a {
     align-items: center;
     justify-content: center;
     justify-items: center;
-    padding: 0;
-    margin: 0;
-    width: 99vw;
-    height: 8vh;
 }
 
 .texto-do-servicos h1 {
@@ -140,15 +148,12 @@ a {
 }
 
 .grid-do-texto {
-    
+
     display: grid;
-    justify-content: space-between;
-    position: absolute;
-    left: 60%;
-    z-index: -1;
-    
-    
+    grid-template-columns: auto auto auto auto;
+
 }
+
 
 .caixa-de-texto {
     font-style: italic;
@@ -159,6 +164,78 @@ a {
     padding: 15px 20px 10px 20px;
     border-radius: 5px;
 
+}
+
+.contato {
+    background-color: var(--fundo_secundario);
+    padding: 0;
+    margin: 0;
+    width: 99vw;
+    height: 100%;
+}
+
+.caixa-do-contato {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#mapa {
+    height: 40vh;
+    width: 20vw;
+}
+
+.referencia {
+    padding: 0;
+    margin: 0;
+    width: 99vw;
+    height: 100%;
+}
+
+.caixa-da-referencia {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.sobre {
+    max-width: 20vw;
+}
+
+.sobre a {
+    color: var(--cinza);
+}
+
+.sobre:nth-child(1) {
+    padding-right: 30px;
+}
+
+.icone-do-facebook {
+    background-color: var(--fundo_secundario);
+    padding-top: 15px;
+    padding-bottom: 15px;
+    margin: 0;
+    width: 99vw;
+    height: 100%;
+
+}
+
+.face {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.copy{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.fa-facebook {
+
+    color: var(--fundo_principal);
+    font-size: 50px;
 }
 
 .grudento {

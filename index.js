@@ -34,6 +34,24 @@ for (let i = 0; i < canvasDoServiços.length; i++) {
     ctx.fill()
 }
 
+//Iniciado o mapa
+
+function iniciarMapa(){
+    const uluru = { lat: -23.411890168281467, lng: -46.45439053154856}
+
+    const mapa = new google.maps.Map(document.getElementById("mapa"), {
+        zoom: 15,
+        center: uluru,
+    })
+
+    const marcador = new google.maps.Marker({
+        position: uluru,
+        map: mapa,
+    })
+}
+
+window.iniciarMapa = iniciarMapa
+
 
 
 
