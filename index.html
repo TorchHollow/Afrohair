@@ -13,18 +13,54 @@
 
 <body>
 
-    <header class="container">
-        <div id="navBar" class="container-do-titulo">
-            <a href="./index.html"><img src="./Source/icon.png" alt="Icone"></a> <span>
-                <p>AFROHAIR</p>
-            </span>
-            <ul>
-                <a class="botao-home" href="./index.html">Home</a>
-                <a class="botao" href="./servicos.html">Serviços</a>
-                <a class="botao" href="./contato.html">Contato</a>
+    <header class="navebar" id="navBar">
 
-            </ul>
+        <div class="nav-header">
+            <div class="nav-logo">
+                <a href="#">
+                    <img src="./Source/icon.png" width="80px" alt="logo">
+
+                </a>
+
+            </div>
         </div>
+
+        <input type="checkbox" id="nav-check">
+        <div class="nav-btn">
+            <label for="nav-check">
+                <span></span>
+                <span></span>
+                <span></span>
+            </label>
+        </div>
+
+        <div class="nav-links">
+            <a href="./index.html">Home</a>
+            <a href="./contato.html">Contato</a>
+
+            <div class="dropdown">
+                <a class="dropBnt" href="./servicos.html">Serviços
+                    <i class="fas fa-angle-down"></i>
+                </a>
+                <div class="drop-content">
+                    <a href="#">Black power</a>
+                    <a href="#">Cabelo afro puff masculino</a>
+                    <a href="#">Flat top</a>
+
+                    <div class="dropdown2">
+                        <a class="dropBtn2" href="#">Mais
+                            <i class="fas fa-angle-right"></i>
+                        </a>
+                        <div class="drop-content2">
+                            <a href="#">Corte afro 360 waves</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+        </div>
+
     </header>
     <section>
         <div class="container-da-imagem">
@@ -172,9 +208,9 @@
     </section>
     <br>
     <footer class="icone-do-facebook">
-            <a class="face" href="https://www.facebook.com/"><i class="fa-brands fa-facebook"></i></a>
-            <br>
-            <p class="copy">AfroHair © 2023 All Rights Reserved.</p>
+        <a class="face" href="https://www.facebook.com/"><i class="fa-brands fa-facebook"></i></a>
+        <br>
+        <p class="copy">AfroHair © 2023 All Rights Reserved.</p>
     </footer>
     <script src="./index.js"></script>
     <script async
