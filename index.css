@@ -12,10 +12,10 @@
     margin: 0;
     box-sizing: border-box;
     font-weight: normal;
-    
+
 }
 
-a{
+a {
     text-decoration: none;
 }
 
@@ -218,6 +218,16 @@ body {
     height: 95.5vh;
 }
 
+@media (max-width:700px) {
+    .container-da-imagem {
+        width: 100%;
+    }
+
+    .container-da-imagem img {
+        height: 50vh;
+    }
+}
+
 .endereco {
     display: flex;
     align-items: center;
@@ -237,6 +247,19 @@ body {
     color: var(--cinza);
 }
 
+@media (max-width:700px) {
+    .endereco {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        justify-items: center;
+        padding: 0;
+        margin: 0;
+        width: 100%;
+        height: 10vh;
+    }
+}
+
 .servicos {
     background-color: var(--fundo_secundario);
     height: 30vh;
@@ -253,12 +276,67 @@ body {
     justify-content: center;
 }
 
+.canvas-do-servico h2 {
+    color: var(--fundo_principal);
+}
+
 .canvas-do-servico:nth-last-child(1) h2 {
     padding-left: 20px;
 }
 
 .canvas-do-servico:nth-last-child(2) h2 {
     padding-right: 100px;
+}
+
+@media (max-width:700px) {
+    .servicos {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: var(--fundo_secundario);
+        height: 50vh;
+        width: 100%;
+
+    }
+
+    .icone-redondo {
+        width: 40vw;
+        height: auto;
+    }
+
+    .row-do-servico{
+        
+    }
+
+    .canvas-do-servico {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        justify-items: center;
+        
+
+    }
+
+    .canvas-do-servico h2 {
+        font-size: 12px;
+        color: var(--fundo_principal);
+    }
+
+    .row-do-servico {
+        padding-left: 0;
+    }
+
+    .container-do-servico {
+        padding-left: 72px;
+    }
+
+    .canvas-do-servico:nth-last-child(1) h2 {
+        padding-left: 15px;
+    }
+
+    .canvas-do-servico:nth-last-child(2) h2 {
+        padding-right: 0;
+    }
 }
 
 .sevicos-principais {
@@ -386,8 +464,8 @@ body {
     width: 100%;
 }
 
-@media (max-width:700px){
-    .grudento{
+@media (max-width:700px) {
+    .grudento {
         position: unset;
     }
 }
