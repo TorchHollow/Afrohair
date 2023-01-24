@@ -1,6 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Barlow:wght@200&family=Kanit:ital@1&family=Nanum+Gothic&family=Quicksand&family=Rowdies:wght@700&display=swap');
 
 :root {
+    --cor_do_titulo:#c2b41f;
     --fundo_principal: #2b2b25;
     --fundo_secundario: #d1c21b;
     --laranja: #eb5b13;
@@ -30,7 +31,7 @@ body {
     height: 70px;
     width: 100%;
     padding: 19px 30px;
-    background-color: var(--fundo_secundario);
+    background-color: var(--cor_do_titulo);
     position: relative;
 }
 
@@ -59,7 +60,7 @@ body {
     padding: 5px 15px;
     margin-left: 20px;
     font-size: 17px;
-    color: var(--fundo_secundario);
+    color: var(--cor_do_titulos);
 }
 
 .navebar .nav-links a {
@@ -102,7 +103,7 @@ body {
 
     .navebar .nav-btn label:hover,
     .navebar #nav-check:checked~.nav-btn label {
-        background-color: var(--fundo_secundario);
+        background-color: var(--cor_do_titulo);
         transition: all 0.5s ease;
     }
 
@@ -111,7 +112,7 @@ body {
         display: block;
         text-align: center;
         width: 50%;
-        background-color: var(--fundo_secundario);
+        background-color: var(--cor_do_titulo);
         transition: all 0.3s ease-in;
         overflow-y: hidden;
         top: 70px;
@@ -137,7 +138,7 @@ body {
         margin: 20px;
         font-size: 18px;
         font-weight: bold;
-        color: var(--fundo_secundario);
+        color: var(--cor_do_titulo);
     }
 
 
@@ -170,7 +171,7 @@ body {
 .drop-content2 {
     display: none;
     position: absolute;
-    background-color: var(--fundo_secundario);
+    background-color: var(--cor_do_titulo);
     min-width: 120px;
     font-size: 16px;
     top: 34px;
