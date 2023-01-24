@@ -304,16 +304,12 @@ body {
         height: auto;
     }
 
-    .row-do-servico{
-        
-    }
-
     .canvas-do-servico {
         display: flex;
         align-items: center;
         justify-content: center;
         justify-items: center;
-        
+
 
     }
 
@@ -386,6 +382,23 @@ body {
 
 }
 
+@media (max-width:700px) {
+    .grid-do-texto {
+        display: flex;
+        flex-direction: column;
+
+    }
+
+    .sevicos-principais a {
+        text-decoration: none;
+        color: var(--fundo_principal);
+    }
+
+    .sevicos-principais {
+        width: 100%;
+    }
+}
+
 .contato {
     background-color: var(--fundo_secundario);
     padding: 0;
@@ -403,6 +416,23 @@ body {
 #mapa {
     height: 40vh;
     width: 20vw;
+}
+
+@media (max-width:700px) {
+    .contato {
+        width: 100%;
+        height: 100%;
+    }
+
+    .caixa-do-contato {
+        display: flex;
+        flex-direction: column;
+    }
+
+    #mapa {
+        height: 40vh;
+        width: 60vw;
+    }
 }
 
 .referencia {
@@ -428,6 +458,26 @@ body {
 
 .sobre:nth-child(1) {
     padding-right: 30px;
+}
+
+@media (max-width:700px) {
+    .referencia {
+        width: 100%;
+        height: 100%;
+    }
+
+    .caixa-da-referencia {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .sobre {
+        max-width: 60vw;
+    }
+
+    .sobre:nth-child(2) {
+        padding-top: 40px;
+    }
 }
 
 .icone-do-facebook {
@@ -458,6 +508,13 @@ body {
     font-size: 50px;
 }
 
+@media (max-width:700px) {
+    .icone-do-facebook {
+        width: 100%;
+        height: 100%;
+    }
+}
+
 .grudento {
     position: fixed;
     top: 0;
@@ -479,5 +536,3 @@ body {
     color: var(--cinza);
 
 }
-
-@media screen and (max-width: 480px) {}
