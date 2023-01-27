@@ -256,6 +256,14 @@ body {
     }
 }
 
+@media (min-width:600px),
+(max-width: 680px){
+    .imagem-do-cabeleleiro{
+        width: 45vw;
+        height: 60vh;
+    }
+}
+
 .icone-do-facebook {
     padding-top: 25px;
     margin: 0;

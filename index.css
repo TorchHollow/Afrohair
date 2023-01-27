@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Barlow:wght@200&family=Kanit:ital@1&family=Nanum+Gothic&family=Quicksand&family=Rowdies:wght@700&display=swap');
 
 :root {
-    --cor_do_titulo:#c2b41f;
+    --cor_do_titulo: #c2b41f;
     --fundo_principal: #2b2b25;
     --fundo_secundario: #d1c21b;
     --laranja: #eb5b13;
@@ -23,8 +23,6 @@ a {
 body {
     font-family: 'Rowdies', cursive;
     background-color: var(--fundo_principal);
-    background-size: cover;
-    background-attachment: fixed;
 }
 
 .navebar {
@@ -33,6 +31,14 @@ body {
     padding: 19px 30px;
     background-color: var(--cor_do_titulo);
     position: relative;
+}
+
+@media (max-width: 900px) and (min-width:890px) {
+
+    .navebar {
+        padding: 19px 30px;
+        position: unset;
+    }
 }
 
 .nav-header img {
@@ -219,6 +225,16 @@ body {
     height: 95.5vh;
 }
 
+@media (max-width: 900px) and (min-width:890px) {
+    .container-da-imagem {
+        width: 100%;
+    }
+
+    .container-da-imagem img {
+        height: 100vh;
+    }
+}
+
 @media (max-width:700px) {
     .container-da-imagem {
         width: 100%;
@@ -226,6 +242,24 @@ body {
 
     .container-da-imagem img {
         height: 50vh;
+    }
+}
+
+@media (max-width: 380px) and (min-width:360px) {
+    .container-da-imagem img {
+        height: 30vh;
+    }
+}
+
+@media (max-width: 450px) and (min-width:390px) {
+    .container-da-imagem img {
+        height: 30vh;
+    }
+}
+
+@media (max-width: 680px) and (min-width:600px) {
+    .container-da-imagem img {
+        height: 80vh;
     }
 }
 
@@ -248,6 +282,15 @@ body {
     color: var(--cinza);
 }
 
+@media (max-width: 900px) and (min-width:890px) {
+    .endereco {
+        padding-top: 20px;
+        padding-bottom: 20px;
+        width: 100%;
+        height: 15vh;
+    }
+}
+
 @media (max-width:700px) {
     .endereco {
         display: flex;
@@ -259,12 +302,56 @@ body {
         width: 100%;
         height: 10vh;
     }
+
+}
+
+@media (max-width: 680px) and (min-width:600px) {
+
+    .endereco h1 {
+        padding-top: 15px;
+        font-size: 20px;
+    }
+
+}
+
+@media (max-width: 450px) and (min-width:390px) {
+    .endereco h1 {
+        padding-left: 50px;
+        font-size: 20px;
+    }
+}
+
+@media (max-width: 380px) and (min-width:360px) {
+    .endereco h1 {
+        padding-left: 35px;
+        font-size: 20px;
+    }
 }
 
 .servicos {
     background-color: var(--fundo_secundario);
     height: 30vh;
     width: 99.1vw;
+}
+
+.row-do-servico {
+    padding: 0;
+    margin: 0;
+}
+
+
+@media (max-width: 900px) and (min-width:890px) {
+    .servicos {
+        width: 100%;
+        height: 60vh;
+        margin: 0;
+        padding: 0;
+
+    }
+
+    .row-do-servico {
+        padding-left: 1500px;
+    }
 }
 
 .row-do-servico {
@@ -336,12 +423,50 @@ body {
     }
 }
 
+@media (max-width: 680px) and (min-width:600px) {
+
+    .row-do-servico {
+        padding-left: 0;
+    }
+
+    .container-do-servico {
+        padding-left: 150px;
+    }
+
+    .canvas-do-servico:nth-last-child(1) {
+        padding-right: 15px;
+    }
+
+    .canvas-do-servico:nth-last-child(1) h2 {
+        padding-left: 35px;
+    }
+
+    .canvas-do-servico:nth-last-child(2) h2 {
+        padding-left: 20px;
+    }
+
+    .canvas-do-servico:nth-last-child(3) h2 {
+        padding-left: 25px;
+    }
+
+}
+
 .sevicos-principais {
 
     padding: 0;
     margin: 0;
     width: 99vw;
     height: 100%;
+}
+
+@media (max-width: 900px) and (min-width:890px) {
+    .sevicos-principais {
+        width: 100%;
+    }
+
+    .caixa-de-texto {
+        max-height: 105vh;
+    }
 }
 
 .row-do-servico {
@@ -383,7 +508,7 @@ body {
 
 }
 
-.caixa-do-texto a{
+.caixa-do-texto a {
     color: var(--cinza);
 }
 
@@ -423,6 +548,18 @@ body {
     width: 20vw;
 }
 
+@media (max-width: 900px) and (min-width:890px) {
+
+    .contato {
+        width: 100%;
+    }
+
+    #mapa {
+        height: 70vh;
+        width: 50vw;
+    }
+}
+
 @media (max-width:700px) {
     .contato {
         width: 100%;
@@ -436,6 +573,27 @@ body {
 
     #mapa {
         height: 40vh;
+        width: 60vw;
+    }
+}
+
+@media (max-width: 680px) and (min-width:600px) {
+    #mapa {
+        height: 70vh;
+        width: 60vw;
+    }
+}
+
+@media (max-width: 450px) and (min-width:390px) {
+    #mapa {
+        height: 40vh;
+        width: 80vw;
+    }
+}
+
+@media (max-width: 380px) and (min-width:360px) {
+    #mapa {
+        height: 30vh;
         width: 60vw;
     }
 }
@@ -531,6 +689,14 @@ body {
         position: unset;
     }
 }
+
+@media (max-width: 920px) and (min-width:740px) {
+    .grudento {
+        position: unset;
+    }
+}
+
+
 
 .botao {
     padding: 0 15px;
