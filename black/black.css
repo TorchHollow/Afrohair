@@ -293,6 +293,14 @@ body {
     }
 }
 
+@media (max-width: 450px) and (min-width:260px){
+    .icone-do-facebook {
+        padding-top: 20px;
+        width: 100%;
+        height: 10vh;
+    }
+}
+
 .grudento {
     position: fixed;
     top: 0;
